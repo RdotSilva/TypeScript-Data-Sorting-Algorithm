@@ -1,5 +1,5 @@
 class Sorter {
-  constructor(public collection: number[]) {}
+  constructor(public collection: number[] | string) {}
 
   /*
    * Sorting algorithm using Bubble Sort
@@ -7,15 +7,19 @@ class Sorter {
   sort(): void {
     const { length } = this.collection;
 
-    // TODO: Add implementation that will handle sorting of strings. As it currently stands the algorithm will not work for strings. Only an array.
-
     for (let i = 0; i < length; i++) {
       for (let j = 0; j < length - i - 1; j++) {
+        // All of this only works if collection nis number[]
+        // If collection is an array of numbers then run this
         if (this.collection[j] > this.collection[j + 1]) {
           const leftHand = this.collection[j];
           this.collection[j] = this.collection[j + 1];
           this.collection[j + 1] = leftHand;
         }
+
+        // Will only work if collection is a string
+        // If collection is a string, do this logic instead:
+        // Logic to compare and swap characters in a string
       }
     }
   }
