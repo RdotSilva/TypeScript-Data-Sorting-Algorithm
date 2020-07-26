@@ -1,3 +1,3 @@
 export class NumbersCollection {
-  data: number[];
+  constructor(public data: number[]) {}
 }
