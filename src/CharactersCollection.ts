@@ -4,4 +4,10 @@ export class CharactersCollection {
   get length(): number {
     return this.data.length;
   }
+
+  compare(leftIndex: number, rightIndex: number): boolean {
+    return (
+      this.data[leftIndex].toLowerCase() > this.data[rightIndex].toLowerCase()
+    );
+  }
 }
