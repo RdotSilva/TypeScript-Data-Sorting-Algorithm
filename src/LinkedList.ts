@@ -79,4 +79,19 @@ export class LinkedList {
     leftNode.data = rightNode.data;
     rightNode.data = leftHand;
   }
+
+  /*
+   * Print each node value in the linked list
+   */
+  print(): void {
+    if (!this.head) {
+      return;
+    }
+
+    let node: Node | null = this.head;
+    while (node) {
+      console.log(node.data);
+      node = node.next;
+    }
+  }
 }
