@@ -8,6 +8,8 @@ export abstract class Sorter {
 
   abstract swap(leftIndex: number, rightIndex: number): void 
 
+  abstract length: number;
+
   /*
    * Sorting algorithm using Bubble Sort
    */
