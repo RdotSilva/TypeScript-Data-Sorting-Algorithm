@@ -3,7 +3,9 @@ interface Sortable {
   compare(leftIndex: number, rightIndex: number): boolean;
   swap(leftIndex: number, rightIndex: number): void;
 }
-export class Sorter {
+export abstract class Sorter {
+  abstract compare(leftIndex: number, rightIndex: number): boolean
+  
   /*
    * Sorting algorithm using Bubble Sort
    */
