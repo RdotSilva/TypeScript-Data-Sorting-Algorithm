@@ -18,6 +18,14 @@ Executing the following script in the terminal will start the application, and a
 npm start
 ```
 
+## Unit Tests
+
+Unit tests are included. To run the unit tests execute this command in the terminal:
+
+```
+npm run test
+```
+
 ## Built With
 
 - Typescript
