@@ -20,7 +20,12 @@
   },
   "homepage": "https://github.com/RdotSilva/-TypeScript-Data-Sorting-Algorithm#readme",
   "dependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/mocha": "^8.0.1",
+    "chai": "^4.2.0",
     "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4"
+    "mocha": "^8.1.0",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2"
   }
 }
