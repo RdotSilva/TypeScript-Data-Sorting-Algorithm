@@ -1,6 +1,6 @@
 # TypeScript Data Sorting Algorithm
 
-Sorting algorithm built using TypeScript that can be used to sort different types of Data Structures
+Abstract Sorting class built using TypeScript. The Sorter uses a Bubble Sort algorithm that can be used to sort many different types of data structures.
 
 ## Installation
 
