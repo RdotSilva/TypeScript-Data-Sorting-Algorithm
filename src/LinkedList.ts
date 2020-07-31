@@ -8,7 +8,7 @@ class Node {
 export class LinkedList extends Sorter {
   head: Node | null = null;
 
-  /*
+  /**
    * Add a new Node to the linked
    * @param {number} data - The value of the Node
    */
@@ -29,7 +29,7 @@ export class LinkedList extends Sorter {
     tail.next = node;
   }
 
-  /*
+  /**
    * Fetches the length of the linked list
    * @returns {number} The length of the linked list
    */
@@ -49,7 +49,7 @@ export class LinkedList extends Sorter {
     return length;
   }
 
-  /*
+  /**
    * Fetches a Node at a specific index
    * @param {number} index - The index of the Node to retrieve
    * @returns {Node} The Node at a specific index
@@ -74,7 +74,7 @@ export class LinkedList extends Sorter {
     throw new Error("Index out of bounds");
   }
 
-  /*
+  /**
    * Compare the two values to see if the first value is greater than the next value
    * @param {number} leftIndex - The index of the first number to compare
    * @param {number} rightIndex - The index of the second number to compare
@@ -88,7 +88,7 @@ export class LinkedList extends Sorter {
     return this.at(leftIndex).data > this.at(rightIndex).data;
   }
 
-  /*
+  /**
    * Swap the VALUES of linked list. Does NOT swap the actual NODE
    * @param {number} leftIndex - the index on the left side that will swap with right side
    * @param {number} rightIndex - the index on the right side that will swap with left side
@@ -102,7 +102,7 @@ export class LinkedList extends Sorter {
     rightNode.data = leftHand;
   }
 
-  /*
+  /**
    * Print each node value in the linked list
    */
   print(): void {
