@@ -5,7 +5,9 @@ interface Sortable {
 }
 export abstract class Sorter {
   abstract compare(leftIndex: number, rightIndex: number): boolean
-  
+
+  abstract swap(leftIndex: number, rightIndex: number): void 
+
   /*
    * Sorting algorithm using Bubble Sort
    */
