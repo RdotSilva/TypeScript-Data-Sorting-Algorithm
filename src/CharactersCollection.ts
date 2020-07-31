@@ -1,3 +1,4 @@
+// TODO: Refactor CharactersCollection to use new Sorter abstract class
 export class CharactersCollection {
   constructor(public data: string) {}
 
