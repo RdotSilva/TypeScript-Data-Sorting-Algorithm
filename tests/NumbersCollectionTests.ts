@@ -8,4 +8,10 @@ describe("Numbers Collection Tests", () => {
     numbersCollection.sort();
     expect(numbersCollection.data).to.deep.equal([1, 2, 3, 4, 5]);
   });
+
+  it("should sort array given negative numbers", () => {
+    const numbersCollection = new NumbersCollection([-1, 0, 4, 2, -5]);
+    numbersCollection.sort();
+    expect(numbersCollection.data).to.deep.equal([-5, -1, 0, 2, 4]);
+  });
 });
