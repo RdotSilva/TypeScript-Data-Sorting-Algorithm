@@ -14,4 +14,10 @@ describe("Numbers Collection Tests", () => {
     numbersCollection.sort();
     expect(numbersCollection.data).to.deep.equal([-5, -1, 0, 2, 4]);
   });
+
+  it("should sort array of only 1 character", () => {
+    const numbersCollection = new NumbersCollection([50]);
+    numbersCollection.sort();
+    expect(numbersCollection.data).to.deep.equal([50]);
+  });
 });
