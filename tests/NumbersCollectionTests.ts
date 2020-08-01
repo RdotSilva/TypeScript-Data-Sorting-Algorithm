@@ -9,15 +9,20 @@ describe("Numbers Collection Tests", () => {
     expect(numbersCollection.data).to.deep.equal([1, 2, 3, 4, 5]);
   });
 
-  it("should sort array given negative numbers", () => {
+  it("sort method should sort array given negative numbers", () => {
     const numbersCollection = new NumbersCollection([-1, 0, 4, 2, -5]);
     numbersCollection.sort();
     expect(numbersCollection.data).to.deep.equal([-5, -1, 0, 2, 4]);
   });
 
-  it("should sort array of only 1 character", () => {
+  it("sort method should sort array of only 1 character", () => {
     const numbersCollection = new NumbersCollection([50]);
     numbersCollection.sort();
     expect(numbersCollection.data).to.deep.equal([50]);
+  });
+
+  it("length getter method should return correct length", () => {
+    const numbersCollection = new NumbersCollection([-1, 0, 4, 2, -5]);
+    expect(numbersCollection.length).to.deep.equal(5);
   });
 });
