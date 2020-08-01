@@ -8,4 +8,10 @@ describe("Characters Collection Tests", () => {
     charactersCollection.sort();
     expect(charactersCollection.data).to.equal("abcd");
   });
+
+  it("sort method should sort upper case string", () => {
+    const charactersCollection = new CharactersCollection("BDCA");
+    charactersCollection.sort();
+    expect(charactersCollection.data).to.equal("ABCD");
+  });
 });
