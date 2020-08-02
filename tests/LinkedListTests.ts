@@ -40,6 +40,11 @@ describe("Linked List Tests", () => {
     expect(linkedList.at(4).data).to.equal(5);
   });
 
+  it("at method empty index does not exist throws error", () => {
+    const linkedList = new LinkedList();
+    expect(() => linkedList.at(0)).to.throw(Error, "Index out of bounds");
+  });
+
   it("compare method empty linked list throws error", () => {
     const linkedList = new LinkedList();
     expect(() => linkedList.compare(0, 1)).to.throw(Error, "List is empty");
