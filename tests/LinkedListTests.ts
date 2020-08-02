@@ -30,6 +30,11 @@ describe("Linked List Tests", () => {
     expect(linkedList.length).to.equal(5);
   });
 
+  it("length getter should return zero with empty linked list", () => {
+    const linkedList = new LinkedList();
+    expect(linkedList.length).to.equal(0);
+  });
+
   it("at method returns correct data", () => {
     const linkedList = new LinkedList();
     linkedList.add(1);
