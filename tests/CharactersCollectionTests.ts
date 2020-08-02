@@ -20,4 +20,9 @@ describe("Characters Collection Tests", () => {
     charactersCollection.sort();
     expect(charactersCollection.data).to.equal("A");
   });
+
+  it("length getter method should return correct length", () => {
+    const charactersCollection = new CharactersCollection("abc");
+    expect(charactersCollection.length).to.equal(3);
+  });
 });
