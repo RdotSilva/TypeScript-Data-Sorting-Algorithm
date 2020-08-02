@@ -29,4 +29,14 @@ describe("Linked List Tests", () => {
     linkedList.add(5);
     expect(linkedList.length).to.equal(5);
   });
+
+  it("at method returns correct data", () => {
+    const linkedList = new LinkedList();
+    linkedList.add(1);
+    linkedList.add(2);
+    linkedList.add(3);
+    linkedList.add(4);
+    linkedList.add(5);
+    expect(linkedList.at(4).data).to.equal(5);
+  });
 });
