@@ -39,4 +39,9 @@ describe("Linked List Tests", () => {
     linkedList.add(5);
     expect(linkedList.at(4).data).to.equal(5);
   });
+
+  it("compare method empty linked list throws error", () => {
+    const linkedList = new LinkedList();
+    expect(() => linkedList.compare(0, 1)).to.throw(Error, "List is empty");
+  });
 });
