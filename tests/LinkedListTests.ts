@@ -54,4 +54,13 @@ describe("Linked List Tests", () => {
     const linkedList = new LinkedList();
     expect(() => linkedList.compare(0, 1)).to.throw(Error, "List is empty");
   });
+
+  it("swap method swaps left index and right index", () => {
+    const linkedList = new LinkedList();
+    linkedList.add(1);
+    linkedList.add(2);
+    linkedList.swap(0, 1);
+    expect(linkedList.at(0).data).to.equal(2);
+    expect(linkedList.at(1).data).to.equal(1);
+  });
 });
