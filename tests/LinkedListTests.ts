@@ -19,4 +19,14 @@ describe("Linked List Tests", () => {
     expect(linkedList.at(0).data).to.equal(500);
     expect(linkedList.length).to.equal(1);
   });
+
+  it("length getter should return correct length", () => {
+    const linkedList = new LinkedList();
+    linkedList.add(1);
+    linkedList.add(2);
+    linkedList.add(3);
+    linkedList.add(4);
+    linkedList.add(5);
+    expect(linkedList.length).to.equal(5);
+  });
 });
