@@ -14,4 +14,10 @@ describe("Characters Collection Tests", () => {
     charactersCollection.sort();
     expect(charactersCollection.data).to.equal("ABCD");
   });
+
+  it("sort method should sort string with only one character", () => {
+    const charactersCollection = new CharactersCollection("A");
+    charactersCollection.sort();
+    expect(charactersCollection.data).to.equal("A");
+  });
 });
