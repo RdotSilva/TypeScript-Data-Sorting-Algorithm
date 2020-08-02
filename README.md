@@ -20,7 +20,12 @@ npm start
 
 ## Unit Tests
 
-Unit tests are included. To run the unit tests execute this command in the terminal:
+Unit tests are written using:
+
+- Mocha
+- Chai
+
+To run the unit tests execute this command in the terminal:
 
 ```
 npm run test
